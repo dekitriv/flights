@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Flights</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Dejan Trivunovic"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content=""/>
+   		<meta name="keywords" content=""/>
+		<link rel="icon" type="image/png" href="images/favicon.png"/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/datepicker.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section id="bannerMain" class="banner onload-image-fade-in onload-content-fade-right style5 fullscreen content-align-center image-position-center invert">
+						<div id="flights" class="content">
+							<h1>Flights</h1>
+							<div id="searchWrap">
+									<form id="searchForm" method="GET" action="#">
+										<div id="from" class="autocomplete">
+											<input type="text" id="inputFrom" placeholder="From" autocomplete="off"/>
+											<button id="excange">
+												<i class="fas fa-exchange-alt"></i>
+											</button>
+										</div>
+										<div id="to" class="autocomplete">
+											<input type="text" id="inputTo" name="" placeholder="To" autocomplete="off"/>
+										</div>
+										<div id="departDate">
+											<input type="text" id="departDateInput" name="" placeholder="Depart date" data-toggle="datepicker"/>
+										</div>
+										<div id="returnDate">
+											<input type="text" id="returnDateInput" name="" placeholder="Return date" data-toggle="datepicker"/>
+										</div>
+										<div id="passengers">
+											<input type="text" name="" readonly="readonly" value="1 Passenger, All" />
+											<span class="fa fa-caret-down" aria-hidden="true"></span>
+										</div>
+									</form>
+								
+							</div>
+							<ul class="actions special">
+								<li><input type="button" class="button large wide" name="searchFlights" id="searchFlights" value="Search" /></li>
+							</ul>
+
+						</div>
+						<div id="bgImage" class="image">
+							<img src="images/banner0.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Flights</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight01.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Hotels</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+								<ul class="actions special stacked">
+								<li><input type="button" class="big wide large" name="hotelsLink" id="hotelsLink" value="Search for hotels" /></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight02.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Cars</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<ul class="actions special stacked">
+								<li><input type="button" class="big wide large" name="carsLink" id="carsLink" value="Look for cars to rent" /></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight03.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Massa sed condimentum</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+						</div>
+
+						<!-- Gallery -->
+							<div id="dinamic" class="gallery style1 medium lightbox onscroll-fade-in">
+							</div>
+
+					</section>
+
+				
+				<!-- Seven -->
+					<section class="wrapper style1 align-left full">
+						<div class="inner medium">
+							<h2>Find your place to stay</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="hotelLocation">Where do you want to stay</label>
+										<input type="text" id="hotelLocation" name="" placeholder="Type in a location">
+									</div>
+									<div class="field half">
+										<label for="checkIn">Check-in date</label>
+										<input type="text" data-toggle="datepicker" name="checkIn" id="checkIn" value="" />
+									</div>
+									<div class="field half">
+										<label for="checkOut">Check-out date</label>
+										<input type="text" data-toggle="datepicker" name="checkOut" id="checkOut" value="" />
+									</div>
+									<div class="field half">
+										<label for="guests">Guests</label>
+										<select id="guests">
+											<option>1</option>
+											<option selected="selected">2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="field half">
+										<label for="creditCard">Enter your credit card</label>
+										<input type="text" id="creditCard" placeholder="0000-0000-0000-0000" name="">
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input class="big wide large" type="button" name="searchHotels" id="searchHotels" value="Search" /></li>
+								</ul>
+							</form>
+						</div>
+						<div class="inner medium borderShadow">
+							<h2>Find your ride</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<div id="pickUpLocation" class="field">
+											<label for="name">Pick up location</label>
+											<input type="text" name="pickUp" id="pickUp" value=""
+											placeholder="Type in a location" />
+										</div>
+										<div id="dropOffLocation" class="field half">
+											<label for="name">Drop-off location</label>
+											<input type="text" name="dropOff" id="dropOff" value=""
+											placeholder="Type in a location" />
+										</div>
+									</div>
+									<div id="infoParent" class="field half">
+										<input type="checkbox" name="driver" id="driver" checked="checked" />
+										<label for="driver">Driver aged between 25-70 &nbsp; <i id="driverAge" class="fas fa-info-circle"></i>
+										<div id="info">
+											<p>Rental companies may charge extra for drivers aged under 25 and over 70.</p>
+										</div></label>
+										
+									</div>
+									<div class="field half">
+										<input type="checkbox" name="diffLoc" id="diffLoc"/>
+										<label for="diffLoc">Return car in a different location</label>
+									</div>
+									<div class="field full">
+										<div class="field half flex">
+											<div class="field cars">
+												<label for="pickUpDate">Pick up date</label>
+												<input type="text" name="pickUpDate" id="pickUpDate" data-toggle="datepicker"/>
+											</div>
+											<div class="field hours">
+												<label for="hours">Hours</label>
+												<select class="dynamicHours">
+													
+												</select>
+											</div>
+										</div>
+										<div class="field half flex margin20left">
+											<div class="field cars">
+												<label for="dropOffDate">Drop-Off date</label>
+												<input type="text" name="dropOffDate" id="dropOffDate" data-toggle="datepicker"/>
+											</div>
+											<div class="field hours">
+												<label for="hours">Hours</label>
+												<select class="dynamicHours">
+													
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="button" class="big wide large" name="search" id="search" value="Search" /></li>
+								</ul>
+							</form>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/datepicker.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>
