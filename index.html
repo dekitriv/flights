@@ -5,10 +5,10 @@
 		<meta charset="utf-8" />
 		<meta name="author" content="Dejan Trivunovic"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content=""/>
-   		<meta name="keywords" content=""/>
-		<link rel="icon" type="image/png" href="images/favicon.png"/>
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="description" content="Flights® is an online travel agency specialised in providing quality services to help you find and purchase flight tickets, hotel accommodation, car rental."/>
+   		<meta name="keywords" content="Travel, Flights, Hotels, Rent-a-car, Locations"/>
+		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+		<link rel="stylesheet" href="assets/css/main.css" /> <!-- Nije min. zbog lakseg pregelda-->
 		<link rel="stylesheet" href="assets/css/datepicker.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -21,8 +21,9 @@
 					<section id="bannerMain" class="banner onload-image-fade-in onload-content-fade-right style5 fullscreen content-align-center image-position-center invert">
 						<div id="flights" class="content">
 							<h1>Flights</h1>
+							<br/>
 							<div id="searchWrap">
-									<form id="searchForm" method="GET" action="#">
+									<form id="searchForm" method="GET" action="">
 										<div id="from" class="autocomplete">
 											<input type="text" id="inputFrom" placeholder="From" autocomplete="off"/>
 											<button id="excange">
@@ -39,8 +40,14 @@
 											<input type="text" id="returnDateInput" name="" placeholder="Return date" data-toggle="datepicker"/>
 										</div>
 										<div id="passengers">
-											<input type="text" name="" readonly="readonly" value="1 Passenger, All" />
-											<span class="fa fa-caret-down" aria-hidden="true"></span>
+											<select>
+												<option value="1">1 Passenger</option>
+												<option value="2">2 Passengers</option>
+												<option value="3">3 Passengers</option>
+												<option value="4">4 Passengers</option>
+												<option value="5">5 Passengers</option>
+											</select>
+											
 										</div>
 									</form>
 								
@@ -59,9 +66,10 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Flights</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>Flights® is an online travel agency specialised in providing quality services to help you find and purchase flight tickets, hotel accommodation, car rental.
+							Book in absolute safety and convenience using Flights reliable services. We have made sure that you will be completely satisfied.</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#" class="button">Book a flight</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -73,7 +81,8 @@
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Hotels</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>We’ve special deals with the world's leading hotels – and we share these savings with you. From local hotels to global brands, discover millions of rooms all around the world.
+							We give travelers one of the widest selections of accommodation on the net, including both independent and major chain hotels as well as self-catering in over hundreds of thousands properties worldwide. The company offers a one-stop shopping source for hotel pricing, amenities and availability and also specializes in providing travelers with accommodation during sold-out periods.</p>
 								<ul class="actions special stacked">
 								<li><input type="button" class="big wide large" name="hotelsLink" id="hotelsLink" value="Search for hotels" /></li>
 							</ul>
@@ -87,7 +96,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Cars</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>Our Rent-a-car hire cars in countries and languages, Flights is the world's biggest online car rental service. Working with leading suppliers, we offer great prices on all car groups, including luxury cars, people carriers, minivans and automatic cars. With a multilingual call centre open 7 days a week, we can find you the best rental prices whenever you want – wherever you go.</p>
 							<ul class="actions special stacked">
 								<li><input type="button" class="big wide large" name="carsLink" id="carsLink" value="Look for cars to rent" /></li>
 							</ul>
@@ -100,8 +109,9 @@
 				<!-- Five -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2>Massa sed condimentum</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+							<h2>Our recommendation</h2>
+							<p>These are some of the destinations you can travel to and find quality hotels.
+							We strongly recommend a flight to some of the following places to enjoy beautiful destinations at great prices</p>
 						</div>
 
 						<!-- Gallery -->
@@ -113,7 +123,7 @@
 				
 				<!-- Seven -->
 					<section class="wrapper style1 align-left full">
-						<div class="inner medium">
+						<div id="wrapForHotels" class="inner medium">
 							<h2>Find your place to stay</h2>
 							<form method="post" action="#">
 								<div class="fields">
@@ -149,7 +159,7 @@
 								</ul>
 							</form>
 						</div>
-						<div class="inner medium borderShadow">
+						<div id="wrapForCars" class="inner medium borderShadow">
 							<h2>Find your ride</h2>
 							<form method="post" action="#">
 								<div class="fields">
@@ -221,7 +231,8 @@
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p>&copy; Flights. Design: <a target="_blank" href="http://egzoticnaputovanja.000webhostapp.com/autor.html">Dejan Trivunovic</a>.</p>
+							<a href="">Documentation</a>  <a href="https://dekitriv.github.io/flights/sitemap.xml" target="_blank">Sitemap</a>
 						</div>
 					</footer>
 
@@ -236,7 +247,5 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/datepicker.js"></script>
 			<script src="assets/js/main.js"></script>
-			
-
 	</body>
 </html>

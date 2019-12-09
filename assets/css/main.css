@@ -8631,10 +8631,18 @@ input, select, textarea {
 	display: flex;
 	border: solid 1px;
 }
+#passengers{
+	width: 25%;
+}
+#passengers select{
+	background: none !important;
+	appearance: none;
+	background-position-x: 244px
+}
 .autocomplete{
 	position: relative;
 }
-#departDate input,#passengers input, #returnDate input, #to input, #from input[type="text"], #from input[type="text"]:active, #from button:active, #from button:focus, #from input[type="text"]:focus{
+#passengers select,#departDate input,#passengers input, #returnDate input, #to input, #from input[type="text"], #from input[type="text"]:active, #from button:active, #from button:focus, #from input[type="text"]:focus{
 	border: none !important;
 	border-color: none !important;
 	box-shadow: none !important;
@@ -8731,7 +8739,7 @@ label{
 	content: '';
 	position: absolute;
 	top: 10px;
-	left: 87%;
+	left: 86%;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -8749,4 +8757,121 @@ label{
 }
 *{
 	scroll-behavior: smooth;
+}
+@media screen and (max-width: 1569px){
+	#info:after{
+		left: 12%;
+	}
+	#info{
+		left: -20px;
+	}
+}
+@media screen and (max-width: 1408px){
+	#info:after{
+		left: 29%;
+	}
+}
+@media screen and (max-width: 1321px){
+	#info:after{
+		left: 45%;
+	}
+}
+@media screen and (max-width: 1250px){
+	.full{
+		flex-wrap: wrap;
+	}
+	#wrapForHotels{
+		width: 100%;
+	}
+	#wrapForCars{
+		width: 100%;
+		border-left: none;
+	}
+	#info:after{
+		left: 55.5%;
+	}
+	#info{
+		left: 0;
+	}
+}
+@media screen and (max-width: 1150px){
+	#flights{
+		width: 90%;
+	}
+	#info:after{
+		left: 59.5%;
+	}
+	.margin20left{
+		margin-left:2%;
+	}
+}
+@media screen and (max-width: 970px){
+	#flights{
+		width: 80%;
+	}
+	#searchForm{
+		flex-wrap: wrap;
+	}
+	#from{
+		width: 50%;
+		border-bottom: none;
+	}
+	#to{
+		width: 50%;
+		border-bottom: none;
+	}
+	#departDate{
+		width: 34%;
+	}
+	#returnDate{
+		width: 34%;
+	}
+	#passengers{
+		width: 32%;
+	}
+	#info:after{
+		left: 71%;
+		display: none;
+	}
+}
+@media screen and (max-width: 590px){
+	#flights{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 530px){
+	select{
+		padding-right: 0px;
+	}
+	#wrapForCars #infoParent{
+		width: 100% !important;
+	}
+	#wrapForCars .fields{
+		flex-wrap: wrap;
+	}
+	#wrapForCars .fields .half{
+		width: 100% !important;
+	}
+	.margin20left{
+		margin-left: 0px;
+	}
+	.full label {
+		font-size: 18px !important;
+	}
+}
+@media screen and (max-width: 420px){
+	#flights{
+		width: 100%;
+	}
+	#bannerMain{
+		padding: 2%;
+	}
+	.full label {
+		font-size: 16px !important;
+	}
+}
+@media screen and (max-width: 370px){
+	.full label{
+		font-size: 14px !important;
+	}
 }

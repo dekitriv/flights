@@ -396,7 +396,6 @@
 
 // MOJ JS
 var year, month, day, returnDay, clientDate
-
 var places = ["Belgrade, BEG", "'Abu Dhabi', AUH","Dubai, DXB","Berlin, BER","Bali, DPS", "Bangkok, BKK", "Bejing, PEK", "Sao Paulo, CGH", "Zanzibar, ZNZ","Zagreb, ZAG","Stockholm, STO", "Istanbul, IST", "Tokyo, TYO", "Male, MLE", "Paris, PAR", "Madrid, MAD", "London, LON", "New Jork, NYC", "Miami, MIA"];
 // UZETO SA w3schools-a
 function autocomplete(inp, arr) {
